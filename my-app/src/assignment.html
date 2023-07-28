@@ -1,0 +1,29 @@
+
+<!-- calculate circumference based on the radius and output "The circumference is NN" -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Circumference
+    </title>
+
+  </head>
+  <body>
+    <P>The circumference is:<span id="Circum"></span></P>
+    <script>
+      // Function to calculate the circumference of a circle
+function calculateCircumference(radius) {
+  var circumference = 2 * Math.PI * radius;
+  return circumference;
+}
+
+// Example usage
+var radius = 8;
+var circumference = calculateCircumference(radius);
+console.log("The circumference is " + circumference);
+document.getElementById("Circum").innerText=circumference;
+
+    </script>
+
+  </body>
+</html>
